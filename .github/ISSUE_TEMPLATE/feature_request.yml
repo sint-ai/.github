@@ -1,0 +1,28 @@
+name: Feature request
+description: Suggest a product, platform, or documentation improvement
+title: "[feature] "
+body:
+  - type: input
+    id: repo
+    attributes:
+      label: Repository
+      placeholder: sintos, sint-protocol, docs
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem are you trying to solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe the behavior, workflow, or API you want to see.
+    validations:
+      required: true
+  - type: textarea
+    id: audience
+    attributes:
+      label: Who benefits?

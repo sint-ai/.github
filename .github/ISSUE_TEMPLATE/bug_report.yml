@@ -1,0 +1,30 @@
+name: Bug report
+description: Report a reproducible issue in a SINT repository
+title: "[bug] "
+body:
+  - type: input
+    id: repo
+    attributes:
+      label: Repository
+      placeholder: sintos, docs, twitter_mcp_server
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: Tell us what you expected and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      description: Share the shortest path we can follow.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Logs, screenshots, or extra context
+      render: shell
